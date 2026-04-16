@@ -1,0 +1,13 @@
+There are 256 characters
+DataTypes:-
+========================
+int, folat, double, long long, char, string, getline
+
+C++:-
+========================
+To instruct Hardware
+Faster , OOPS and Procedural both
+Memory Management
+More control over System Softwares
+Fast Programs
+High Performance
