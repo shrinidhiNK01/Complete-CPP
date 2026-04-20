@@ -19,5 +19,13 @@ int main() {
     cout << typeid(a).name() << endl; 
     cout << typeid(b).name() << endl;
 
+    // #include<manip>  // for manipulators
+    // Manipulators:==> It is used to format the output. eg:- endl, setw, setprecision, etc.
+     cout << "Hello" << endl;  // endl is a manipulator that moves the cursor to the next line
+     cout << "World" << endl;
+
+    cout << setw(10) << "Hello" << endl;  // setw is a manipulator that sets the width of the output    
+    cout << setw(10) << "World" << endl;
+
     return 0;
 }

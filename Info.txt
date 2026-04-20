@@ -56,3 +56,24 @@ Operators:-
 3)Relational/Comparison Operators :- < > <= >= == !=
 4)Unary Operators:- ++a a++ --a a-- & |
 5)Assignment Operators:- = += -= *= /= %=
+
+Operator Precedence:-
+===============================
+* / % =>left to right
++ -   =>left to right
+<< >>
+<=>
+< <=
+> >=
+== !=
+&
+^
+|
+&&
+||
+
+Control Structures:-
+======================
+1)Sequence Structure
+2)Selection Structure
+3)Loop Structure
