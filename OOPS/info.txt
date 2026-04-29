@@ -1,0 +1,60 @@
+Procedural Programming:-
+==================================
+Focuses on the steps to be executed
+Data is not hidden from the programmer
+Not secure
+Functions use local or global data
+data moves openly from 1 function to another function
+
+OOPS:-
+==============================
+Objects are entities and class is blueprint of entities
+By default everything is private access Modifier in cpp
+C language + OOPS = C++
+Increases readability ,Scalability , Maintainability , Bug free Nature 
+Keeps Data Security 
+OOPS models the program according to the realworld scenarios 
+classes dont take space but objects does
+class is a template to create objects
+
+Topics in OOPS:-
+=============================
+1)class :- Blue Print / Template to create objects
+2)objects :- Instance of a class
+3)Abstraction :- Hiding unecessary deatils and showing only necessary details
+4)Encapsulation :- Wrapping data and functions that operate on the data in a single unit
+5)Inheritance :- Properties of 1 class inherited to another class
+6)Polymorphism :- ability to take more than 1 forms
+7)Dynamic Binding :- Binding of function call at run time
+8)Message Passing :- passing info from 1 object to another object 
+
+Uses:-
+==================
+code reusability of code
+Secure systems using data hiding 
+reduce software complexity
+
+Access Modifiers:-
+=============================
+a) public :- members are accessible from outside the class
+b) private :- members are not accessible from outside the class
+c) protected :- members are accessible in derived classes 
+
+
+struct:- 
+no data hiding
+all are public by default
+used in competitive programming
+no methods or functions and properties
+
+class:- 
+data hiding
+all are private by default
+used in real world applications
+
+
+:: => Scope resolution operator
+
+Friend Class:-
+=============================
+
