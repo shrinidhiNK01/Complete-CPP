@@ -6,7 +6,9 @@ int main(){
     for(int i=0;i<5;i++){  //initialization, condition, update
         cout<<i<<" ";
     }
-    cout<<endl;
+    cout<<endl;\
+
+
     // 2. While loop:-
     int i=0;
     while(i<5){
@@ -14,6 +16,8 @@ int main(){
         i++;
     }
     cout<<endl;
+
+
     // 3. Do-while loop:-
     i=0;
     do{
@@ -21,6 +25,8 @@ int main(){
         i++;
     }while(i<5);
     cout<<endl;
+
+
     // Nested loops:-
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
@@ -28,6 +34,7 @@ int main(){
         }
         cout<<endl;
     }
+
 
     // Break and continue:-
     // 1. Break:-
@@ -38,6 +45,8 @@ int main(){
         cout<<i<<" ";
     }
     cout<<endl;
+
+    
     // 2. Continue:-
     for(int i=0;i<5;i++){
         if(i==3){

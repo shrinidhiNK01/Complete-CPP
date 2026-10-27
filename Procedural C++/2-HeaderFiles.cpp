@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "user_defined_header.h"
+#include "user_defined_header.h" //this is a user defined header file. It is created by the user. It contains the declaration of the function user_defined_header_demo() which is defined in the file user_defined_header.cpp , it will produce an error if the file is not present in the same directory as the main file. It is included in the main file using #include "user_defined_header.h" directive. The function user_defined_header_demo() is called in the main function to demonstrate the use of user defined header files.
 using namespace std;
 int main() {
     // Header files
@@ -29,3 +29,4 @@ int main() {
 
     return 0;
 }
+

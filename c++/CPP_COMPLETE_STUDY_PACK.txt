@@ -1,0 +1,214 @@
+COMPLETE C++ BEGINNER TO ADVANCED STUDY PACK
+
+This is the plain text revision version. The detailed version is split into Markdown files in the same outputs folder.
+
+SECTION 1: WHAT IS C++
+
+C++ is a compiled, strongly typed, general-purpose programming language. It is used for high-performance applications such as games, operating systems, embedded systems, databases, browsers, finance systems, and competitive programming.
+
+C++ supports procedural programming, object-oriented programming, and generic programming.
+
+C++ gives high-level features like classes, templates, STL, and algorithms. It also gives low-level control through pointers, references, and manual memory management.
+
+SECTION 2: FIRST PROGRAM
+
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, C++!\n";
+    return 0;
+}
+
+main is the entry point. iostream gives input/output. cout prints output. return 0 means success.
+
+SECTION 3: VARIABLES AND DATA TYPES
+
+A variable is a named memory location.
+
+Common types:
+int for whole numbers.
+long long for large integers.
+float and double for decimals.
+char for single character.
+bool for true/false.
+std::string for text.
+
+Use const for values that should not change. Use constexpr for compile-time constants.
+
+SECTION 4: INPUT OUTPUT
+
+std::cout prints output.
+std::cin reads input.
+std::getline reads a full line.
+
+SECTION 5: OPERATORS
+
+Arithmetic: + - * / %
+Comparison: == != > < >= <=
+Logical: && || !
+Assignment: = += -= *= /=
+
+Use parentheses to make precedence clear.
+
+SECTION 6: CONTROL FLOW
+
+if/else runs code based on condition.
+switch checks one value against fixed cases.
+for loop repeats known number of times.
+while loop repeats while condition is true.
+do while runs at least once.
+break exits loop.
+continue skips current iteration.
+
+SECTION 7: FUNCTIONS
+
+A function is reusable code.
+
+int add(int a, int b) {
+    return a + b;
+}
+
+Call by value copies data. Call by reference modifies original. Const reference avoids copy and prevents modification.
+
+Function overloading means same name with different parameters. Recursion means function calls itself and must have a base case.
+
+SECTION 8: ARRAYS, STRINGS, STRUCTS, ENUMS
+
+Array stores same type elements with fixed size.
+std::vector is dynamic array and is preferred in modern C++.
+std::string stores text.
+struct groups related data.
+enum class gives type-safe named constants.
+
+SECTION 9: OOP
+
+Class is blueprint. Object is instance.
+
+OOP principles:
+Encapsulation hides data.
+Abstraction hides implementation detail.
+Inheritance reuses and extends class.
+Polymorphism allows one interface with many implementations.
+
+public members are accessible outside.
+private members are accessible only inside class.
+protected members are accessible inside class and derived classes.
+
+Constructor initializes object. Destructor cleans object. Initialization lists initialize members before constructor body.
+
+SECTION 10: INHERITANCE AND POLYMORPHISM
+
+Inheritance forms:
+single, multilevel, multiple, hierarchical, hybrid.
+
+Public inheritance means is-a relationship.
+
+Virtual functions enable runtime polymorphism.
+Pure virtual function makes class abstract.
+Base classes used polymorphically should usually have virtual destructor.
+
+Diamond inheritance can be solved with virtual base class.
+
+SECTION 11: POINTERS AND REFERENCES
+
+Pointer stores address. Reference is another name for existing variable.
+
+& gives address. * dereferences pointer.
+
+Use nullptr for empty pointer.
+
+Dynamic memory:
+new allocates. delete frees.
+new[] allocates array. delete[] frees array.
+
+Modern C++ prefers smart pointers and containers.
+
+SECTION 12: RAII AND SMART POINTERS
+
+RAII means resource acquired in constructor and released in destructor.
+
+unique_ptr means single ownership.
+shared_ptr means shared ownership.
+weak_ptr observes shared object without owning it.
+
+Avoid raw owning pointers when possible.
+
+SECTION 13: STL
+
+STL provides containers, iterators, algorithms, and function objects.
+
+vector: dynamic array.
+list: doubly linked list.
+deque: push/pop both ends.
+stack: LIFO.
+queue: FIFO.
+priority_queue: highest priority first.
+set: sorted unique values.
+unordered_set: hash unique values.
+map: sorted key-value.
+unordered_map: hash key-value.
+
+Algorithms:
+sort, reverse, find, count, binary_search.
+
+SECTION 14: TEMPLATES
+
+Templates allow generic code.
+
+template <typename T>
+T add(T a, T b) {
+    return a + b;
+}
+
+Class templates create generic classes. Concepts constrain templates and improve errors.
+
+SECTION 15: MODERN C++
+
+Important modern features:
+auto, range-for, nullptr, enum class, lambdas, move semantics, smart pointers, constexpr, optional, variant, string_view, structured bindings, ranges, concepts.
+
+Move semantics transfers resources instead of copying.
+
+SECTION 16: FILE I/O
+
+ifstream reads files.
+ofstream writes files.
+fstream reads and writes.
+
+Always check file opened successfully. Do not use while(!file.eof()); prefer while(file >> value) or while(getline(file,line)).
+
+SECTION 17: ERRORS AND DEBUGGING
+
+Use exceptions, optional, return values, or error codes for errors.
+Use assertions for programmer assumptions.
+Use debugger, compiler warnings, sanitizers, and tests.
+
+Build steps:
+preprocessing, compilation, assembly, linking.
+
+SECTION 18: ADVANCED TOPICS
+
+Exception safety means objects remain valid when exceptions happen.
+Rule of 0/3/5 explains resource management.
+Concurrency uses thread, mutex, lock_guard, atomic, async, future.
+Ranges make algorithms expressive.
+Coroutines allow functions to suspend and resume.
+Modules are modern alternatives to some header/include problems.
+
+SECTION 19: COMMON MISTAKES
+
+Missing semicolon.
+Uninitialized variable.
+Out-of-bounds access.
+Using = instead of ==.
+Infinite loop.
+Memory leak.
+Dangling pointer.
+Dereferencing null pointer.
+Forgetting virtual destructor.
+Object slicing.
+Using raw owning pointers unnecessarily.
+
+SECTION 20: INTERVIEW MASTER SUMMARY
+
+C++ is a compiled high-performance language supporting procedural, OOP, and generic programming. Core basics include variables, types, operators, control flow, functions, arrays, strings, structs, and file I/O. OOP uses classes, encapsulation, constructors, destructors, inheritance, and polymorphism. Memory is controlled through stack, heap, pointers, references, RAII, and smart pointers. STL provides reusable containers and algorithms. Modern C++ improves safety and expressiveness with auto, nullptr, lambdas, move semantics, optional, variant, ranges, concepts, and smart pointers.

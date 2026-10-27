@@ -1,6 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
+
+//  Reference Variables
+//     1. Reference variables are used to create an alias for a variable.
+//     2. It is created using the & operator.
+//     3. It must be initialized at the time of declaration.
+//     4. It cannot be null.
+//     5. It cannot be reassigned to another variable.
+float x = 455;
+float & y= x;
+cout << x << endl;
+cout << y << endl;
+
+// Changing the value of x will change the value of y and vice versa.
     int a=10;
     char c='c';
     cout<<a<<endl;
@@ -11,6 +24,7 @@ int main() {
     cout<<c<<endl;
 
     //Constants in cpp
+    //=======================
     const int b=10;
     const char d='c';
     cout<<b<<endl;

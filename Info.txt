@@ -1,13 +1,53 @@
+
+Programming = Giving step-by-step instructions to a computer to solve a problem.
+
 C++:-
 ========================
 To instruct Hardware
-Faster , OOPS and Procedural both
+Faster , OOPS(Maintainable and extensible Programms) and Procedural both
 Memory Management
 More control over System Softwares
 Fast Programs
 High Performance
 Low level Architecture Program
 Control Hardwares
+Portable and Platform dependent and machine independent
+Very close to hardware that makes system interactive directly 
+
+along with c?
+=================
+Object-Oriented Programming
+Templates
+STL
+Generic Programming
+Modern Features
+
+C++ Uses:-
+===========
+Microsoft office
+Adobe Photoshop
+Rasberrypi
+Aurdiono 
+High Frequency Trading
+Fast
+Memory Efficient
+Microcontroller
+Sotware development
+GUI
+Networking
+Media Player
+Games,Unreal engine softwares
+OS
+browsers
+embedded system 
+desktop apps
+graphics
+robots
+device Drivers
+database engines
+cloud/distributed engines 
+Image processing
+
 
 Based on Scope, Variables can be classified into 2 types:-region where the existance of code is valid
 =========================================================
@@ -15,6 +55,7 @@ Based on Scope, Variables can be classified into 2 types:-region where the exist
 2)Global Variables :- variables outside the function and can be accessed from anywhere
 
 global and local variables can have same variable name
+local variable has higher priority than global
 
 C++ DataTypes:-
 =====================
@@ -33,7 +74,7 @@ Rules to declare variables:-
 7)Variable names can range from 1 to 255 characters
 8)Variable names are case sensitive
 
-Size of datatypes:-
+Size of datatypes:-(64 bit Processor)
 =============================
 1)int:- 4
 2)double:- 8
@@ -77,3 +118,186 @@ Control Structures:-
 1)Sequence Structure
 2)Selection Structure
 3)Loop Structure
+
+
+C programming is a static & procedural programming language.
+where memory allocation done at compile time (Fixed Memory)
+                                                                                    (SSD + HDD)  (program.exe)
+source file ----> Preprocessor ---------> Compiler ----> Assembler ----> Linker ----> Loader ----> Execution
+    (s.c)             (.i)                      (.s)                     (.o)                     (.out)
+                                                        (main.o+iostream+vector+cmath+other libraries)
+
+CPU cannot execute directly from storage.
+Loader sends SSD to RAM 
+
+cpu= Fetch->decode->execute
+Instruction by instruction.
+
+cpu executes -> os displays
+Faster than JS,Java,Python,Rust bcz C is close to hardware & direct interaction with memory.
+
+C is Machine Independent,Directly Interact with hardware devices, used in Firmware,Driver level programming.
+C is used to build softwares,games,OS(windows,Linux,Unix),Compilers,Databases,Embedded Systems,AI,Blockchain,Assemblers,TextEditors,Network Drivers,modern programs,Webservers,Virtual Assistants
+First developed in Unix System,Bell Labratories,1972.
+C provides lower level memory management using pointers and functions(malloc(),calloc(),realloc(),free())
+C is a Procedural Programming Language.
+C is found by Dennis Ritchie in Bell Labratories.(1972)
+C doesn't work with OOPS
+
+
+
+
+#include <stdio.h>
+
+int main(){
+    printf("Hello World\n");
+    return 0;
+}
+
+
+//Header Files - stdio.h, math.h, string.h, stdlib.h, time.h, etc.
+#include = Preprocessor directive , leads to compilation error if not found in system
+"stdio.h" header file contains printf() function , It means standard input output
+
+int main() : Entry point of the program
+
+return 0 : Indicates successful execution
+
+
+//input output
+//Printf = prints output to screen from stdio.h library
+//Scanf = takes input from user
+
+
+//Formate specifiers
+int = integer = %d
+float = decimal = %f
+char = character = %c
+double = double = %lf
+long = long = %ld
+short = short = %hd
+
+
+//
+Tokens
+==============
+Keywords - Reserved words (auto,break,case,char,const,continue,default,do,double,else,enum,extern,float,for,goto,if,int,long,register,return,short,signed,sizeof,static,struct,switch,typedef,union,unsigned,void,volatile,while)
+Identifiers - User defined words
+Constants - Fixed values
+Variables - Memory locations in RAM/Memory used to store values
+Operators - Perform operations
+string - sequence of characters (char array)
+Literals - Integer Literals,Floating Point Literals,Character Constants,String Literals,Escape Sequences
+Symbols
+
+
+Variables Rules:-
+=====================
+1) Varible name cannot start with number (eg. 1abc)
+2) Variable name cannot contain special characters except underscore(_) (eg. abc@)
+3) Variable name cannot contain spaces (eg. abc abc)
+4) Cannot use keywords as variable name
+5)Only 32letters in variable
+6)No whitespace allowed in variable name
+
+Datatypes:-
+======================
+1) int (2 bytes)
+2) float (4 bytes)
+3) double (8 bytes)
+4) char (1 byte)
+5) short (2 bytes)
+6) long (4 bytes)
+7) signed (2 or 4 bytes)
+8) unsigned (2 or 4 bytes)
+9) void
+10) struct           |
+11) union          |
+12) enum           |
+13) typedef        |  User-Defined Data Types
+14) sizeof           |
+15) long int
+16) long double
+17) long float
+18) long long
+19) long long int
+20) long long float 
+21) long long double
+22) long long int float
+23) long long int double
+
+Derived Datatypes:-
+======================
+1) Arrays
+2) Pointers
+3) Struct
+4) Union
+5) Enum
+6) Typedef
+7) sizeof
+
+Memory address will be in hexa decimal format
+no of bits allocated for each premitive datatype depends on programming language,compiler,OS
+
+Operators:-
+==========================
+1) Arithemetic Operators (+, -, *, /, %)
+2) Relational Operators (==, !=, <, >, <=, >=)
+3) Assignment Operators (=, +=, -=, *=, /=, %=)
+4) Logical Operators (&&, ||, !)
+5) Increment and Decrement Operators (++, --)
+6) Conditional Operator (? :)
+7) Bitwise Operators (&, |, ^, ~, <<, >>)
+8) sizeof Operator :- sizeof(int), sizeof(float), sizeof(double), sizeof(char), sizeof(short), sizeof(long), sizeof(signed), sizeof(unsigned), sizeof(void), sizeof(struct), sizeof(union), sizeof(enum), sizeof(typedef), sizeof(long int), sizeof(long double), sizeof(long float), sizeof(long long), sizeof(long long int), sizeof(long long float ), sizeof(long long double), sizeof(long long int float), sizeof(long long int double)
+9) Comma Operator (,)
+10) Ternary Operator (? :)
+11) Pointer Operators (*, &)
+12) sizeof Operator
+13) Comma Operator (,)
+14) Ternary Operator (? :)
+
+
+Operator Precedence
+====================
+1. Parentheses () [] {}
+2. Unary ++ -- sizeof
+3. * / % (left to right)
+4. + - (left to right)
+
+Constants:-
+==============
+Immutable variables /read only values
+int = #define PI 3.14
+float = #define PI 3.14f
+
+1)Const keywords
+2)# define preprocessor directive
+
+Escape sequence in C:-
+===========================
+\n - new line
+\t - tab
+\b - backspace
+\r - carriage return
+\a - alert
+\" - double quote
+\' - single quote
+\\ - backslash
+
+Functions:-
+=====================
+avoid rewriting same logic theough functions
+Easy debugging
+
+Preprocessor removes comments , replace macros , include headers
+
+C++ directly communicates with hardware whereas other programming languages uses the other 3rd party softwares/Frameworks/Libraries to manipulate the hardwares, So C++ is very faster compared to other languages 
+
+C++ = C + OOPS
+Fast Programs , More Controls over System management , Memory Management 
+High Performance
+Low level = very near to hardware .
+High level = Logically sound , faar from hardware
+variables:- containers to store the data 
+comments:- // and /*   */
+Datatypes:- 1)Built in(int, , 2)User-Defined 3)Derived

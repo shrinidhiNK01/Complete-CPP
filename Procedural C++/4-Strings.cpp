@@ -63,4 +63,22 @@ int main(){
     cout << s1 << endl; // Output: (sorted string)
     cout << count(s1.begin(), s1.end(), 'a') << endl; // Output: (count of 'a')
     s1.erase(remove(s1.begin(), s1.end(), 'a'), s1.end());
+
+    
+    // ============================================================
+    //  STRING OPERATIONS
+    // ============================================================
+
+    string s2 = "Shrinidhi";
+
+    int len = s2.size();
+
+    cout << "String: " << s2 << endl;
+    cout << "Length of string: " << len << endl;
+
+    // Access the last character
+    if (!s2.empty())
+    {
+        cout << "Last character: " << s2[len - 1] << endl;
+    }
 }

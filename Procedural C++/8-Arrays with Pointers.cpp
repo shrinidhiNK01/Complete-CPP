@@ -45,4 +45,14 @@ int main() {
     cout<<*(ptr++)<<endl;
     cout<<*(++ptr)<<endl;
 
+    int x =2;
+    int *y =&x;
+    cout<<x<<endl;  // 2
+    cout<<y<<endl;  // address of x
+    cout<<*y<<endl;  // 2
+    *y=*y+1;
+    cout<<x<<endl;  // 3
+    
+    
+
 }

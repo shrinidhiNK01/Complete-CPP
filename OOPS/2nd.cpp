@@ -14,6 +14,7 @@ class Animal{
     void getData();
 };
 
+// :: => scope resolution operator
 void Animal::setData(int a,int b,int c){
     this->a=a;
     this->b=b;

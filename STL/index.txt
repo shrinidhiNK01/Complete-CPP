@@ -1,0 +1,53 @@
+STL:- Standered template library
+
+It is a collection of pre-written codes which are used to implement various data structures and algorithms. 
+library of generic classes and functions.
+
+Generic code:-  means it can work with any data type.
+
+Ex:- vector<int>, vector<string>, vector<float>, vector<double>, etc.
+
+There are 3 main components of STL:
+1.Containers :- objects which stores data 
+2.Iterators :- object which points to an element of a container
+3.Algorithms :- functions which performs some operation on a container
+
+1.Containers:-
+  In STL, container is a class template that is used to store a collection of objects of the same data type.
+  It is a collection of data elements of same data type.
+  Ex:- vector, list, stack, queue, set, map, etc.
+
+  Containers:- 
+    1.Sequence Containers
+    2.Associative Containers
+    3.Container Adapters
+
+    1.Sequence Containers:- 
+      1.vector - Dynamic array
+      2.list - Doubly linked list
+      3.deque - Double ended queue
+      4.array - Static array
+      5.forward_list - Singly linked list
+    
+    2.Associative Containers:-  all operations are fast except Random access
+      1.set - Stores unique elements in sorted order
+      2.map - Stores key-value pairs in sorted order
+      3.multiset - Stores duplicate elements in sorted order
+      4.multimap - Stores duplicate key-value pairs in sorted order
+
+    3.Container Adapters / Derived Containers:- 
+      1.stack
+      2.queue
+      3.priority_queue
+
+2.Iterators:-
+  In STL, iterator is a class template that is used to iterate over the elements of a container.
+  It is a pointer-like object that is used to iterate over the elements of a container.
+  Ex:- iterator, const_iterator, reverse_iterator, etc.
+
+3.Algorithms:-
+  In STL, algorithm is a class template that is used to perform some operation on a container.
+  It is a collection of functions that are used to perform some operation on a container.
+  Ex:- sort, reverse, find, copy, etc.
+
+  

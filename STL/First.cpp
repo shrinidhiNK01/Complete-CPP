@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     //Vector Declaration
-    vector<int> v; //Dynamic Array
+    vector<int> v; //Dynamic Array ,Fast random access, Slow insertion and deletion at the end
     v.push_back(1);
     v.push_back(2);
     v.push_back(3);
@@ -23,10 +23,10 @@ int main(){
     cout<<"Max Size of Vector: "<<v.max_size()<<endl;
 
    list<int> ll;
-   ll.push_back(2);
+   ll.push_back(2); //Fast insertion and deletion at the end
    ll.push_back(3);
    ll.push_back(4);
-   ll.push_front(5);
+   ll.push_front(5); //Fast insertion and deletion at the beginning
    ll.push_front(6);
    for(auto i:ll){
         cout<<i<<" ";
